@@ -26,10 +26,10 @@ build: $(APPNAME)
 $(APPNAME):  Gopkg.lock test $(SRC)
 	go build
 
-test:
+test: $(SRC)
 	go test -v -cover $(PKGS)
 
-Gopkg.lock: Gopkg.toml
+Gopkg.lock: Gopkg.toml $(SRC)
 	dep ensure
 
 dep:
@@ -40,6 +40,7 @@ init:
 
 docker: Dockerfile $(SRC)
 	docker build -t $(APPNAME):$(TAG) $(BUILDARGS) $(BUILD_ARGS) -f ${DOCKERFILE} .
+	docker tag $(APPNAME):$(TAG) $(APPNAME):dev
 
 
 all: $(APPNAME) docker

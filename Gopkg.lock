@@ -3,72 +3,94 @@
 
 [[projects]]
   branch = "master"
+  digest = "1:844cde0419d116fa3c843f5bf7f3fc9e551238fc7f802e0575bc5fc8aca4a5cc"
   name = "github.com/akkeris/vault-client"
   packages = ["."]
+  pruneopts = "UT"
   revision = "3fb70cde1f28e398d5b97fb4774131b1f15fd236"
 
 [[projects]]
+  digest = "1:baab02a9f8f46ac64bed54bc4bfffc6654080cbb183614eb3278a6170d6060fd"
   name = "github.com/ant0ine/go-json-rest"
   packages = [
     "rest",
-    "rest/trie"
+    "rest/trie",
   ]
+  pruneopts = "UT"
   revision = "ce4b71cdf7ba29ef443d704bd923f5bbf281ee30"
   version = "v3.3.2"
 
 [[projects]]
   branch = "master"
+  digest = "1:f14d1b50e0075fb00177f12a96dd7addf93d1e2883c25befd17285b779549795"
   name = "github.com/gopherjs/gopherjs"
   packages = ["js"]
-  revision = "3926a9f66452f7a8c8d9c0e4e3074383f9aff5cd"
+  pruneopts = "UT"
+  revision = "0892b62f0d9fb5857760c3cfca837207185117ee"
 
 [[projects]]
+  digest = "1:1e15f4e455f94aeaedfcf9c75b3e1c449b5acba1551c58446b4b45be507c707b"
   name = "github.com/jtolds/gls"
   packages = ["."]
+  pruneopts = "UT"
   revision = "77f18212c9c7edc9bd6a33d383a7b545ce62f064"
   version = "v4.2.1"
 
 [[projects]]
   branch = "master"
+  digest = "1:0e1e5f960c58fdc677212fcc70e55042a0084d367623e51afbdb568963832f5d"
   name = "github.com/nu7hatch/gouuid"
   packages = ["."]
+  pruneopts = "UT"
   revision = "179d4d0c4d8d407a32af483c2354df1d2c91e6c3"
 
 [[projects]]
+  digest = "1:12f4e78cd664ec46c74735379f07d35b4fbc9b55e74c2c565009143c87581cc4"
   name = "github.com/smartystreets/assertions"
   packages = [
     ".",
     "internal/go-render/render",
-    "internal/oglematchers"
+    "internal/oglematchers",
   ]
-  revision = "0b37b35ec7434b77e77a4bb29b79677cced992ea"
-  version = "1.8.1"
+  pruneopts = "UT"
+  revision = "7678a5452ebea5b7090a6b163f844c133f523da2"
+  version = "1.8.3"
 
 [[projects]]
+  digest = "1:52fe67b62ac538e99a684af3691946fffde2de8683f2a934cf239f53fb96e2c2"
   name = "github.com/smartystreets/goconvey"
   packages = [
     "convey",
     "convey/gotest",
-    "convey/reporting"
+    "convey/reporting",
   ]
+  pruneopts = "UT"
   revision = "9e8dc3f972df6c8fcc0375ef492c24d0bb204857"
   version = "1.6.3"
 
 [[projects]]
   branch = "v2"
+  digest = "1:29bf5c8251ed1689ddb48fa672d6154694cd4a43975e69f151507e67071e3741"
   name = "gopkg.in/mgo.v2"
   packages = [
     ".",
     "bson",
     "internal/json",
     "internal/sasl",
-    "internal/scram"
+    "internal/scram",
   ]
-  revision = "3f83fa5005286a7fe593b055f0d7771a7dce4655"
+  pruneopts = "UT"
+  revision = "9856a29383ce1c59f308dd1cf0363a79b5bef6b5"
 
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "a6cf65ab7fc320d189bb2752a3505b13cf730640f343ce9905ea6809d7094e91"
+  input-imports = [
+    "github.com/akkeris/vault-client",
+    "github.com/ant0ine/go-json-rest/rest",
+    "github.com/nu7hatch/gouuid",
+    "github.com/smartystreets/goconvey/convey",
+    "gopkg.in/mgo.v2",
+  ]
   solver-name = "gps-cdcl"
   solver-version = 1

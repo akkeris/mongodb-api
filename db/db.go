@@ -64,6 +64,8 @@ func setEnv() {
         log.Fatal("(db.setEnv) MONGODB_SECRET secret not set")
     }
     log.Print("(db.setEnv) MONGODB_SECRET: " + mongodbSecret)
+    log.Print("(db.setEnv) VAULT_ADDR: " + os.Getenv("VAULT_ADDR"))
+    log.Print("(db.setEnv) VAULT_TOKEN: " + os.Getenv("VAULT_TOKEN"))
 
     secret := vault.GetSecret(mongodbSecret)
     dbc := &Dbc
