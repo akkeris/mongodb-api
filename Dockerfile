@@ -3,7 +3,7 @@
 # Intial FROM is a fix for Jenkins docker plugin
 # not being able to parse the 'as xxxxx' in the FROM command
 #
-#FROM golang:1.9-alpine3.7
+FROM golang:1.9-alpine3.7
 FROM golang:1.9-alpine3.7 as builder
 
 RUN apk update; \
