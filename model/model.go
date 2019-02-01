@@ -29,7 +29,7 @@ type DatabaseSpec struct {
 }
 
 type DBUrl struct {
-    Url string `json:"DATABASE_URL"`
+    Url string `json:"MONGODB_URL"`
 }
 
 type FullDatabaseSpec struct {

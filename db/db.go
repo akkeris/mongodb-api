@@ -354,7 +354,7 @@ func GetDbList() (*[]model.DatabaseSpec, error) {
         log.Print("(db.GetDbList) ERROR finding all db's ", err)
     } else {
         log.Println(lDbSpec)
-        log.Printf("(db.GetDbList) Number dbs: ", len(lDbSpec))
+        log.Printf("(db.GetDbList) Number dbs: %d", len(lDbSpec))
     }
 
     return &lDbSpec, err
