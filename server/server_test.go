@@ -102,7 +102,7 @@ func TestServer(t *testing.T) {
         })
     })
 
-    Convey("On priovision with bad post data", t, func() {
+    Convey("On provision with bad post data", t, func() {
         testDb := model.ProvisionSpec{
             Plan:        "",
             BillingCode: "",

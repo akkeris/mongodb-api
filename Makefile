@@ -2,7 +2,7 @@
 REGISTRY=$(MYREGISTRY)
 ORG_NAME=akkeris
 APPNAME=mongodb-api
-VERSION=1.0
+VERSION=1.1
 TAG=$(VERSION)-DEV
 REPO=$(REGISTRY)/$(ORG_NAME)/$(APPNAME)
 IMAGE=$(REGISTRY)/$(ORG_NAME)/$(APPNAME):$(TAG)
@@ -39,7 +39,8 @@ init:
 	dep init
 
 docker: Dockerfile $(SRC)
-	docker build -t $(APPNAME):$(TAG) $(BUILDARGS) $(BUILD_ARGS) -f ${DOCKERFILE} .
+	docker build -t $(APPNAME):$(TAG) $(EXTRA_ARGS) $(BUILD_ARGS) -f ${DOCKERFILE} .
+	docker build -t $(APPNAME):$(TAG) $(EXTRA_ARGS) $(BUILD_ARGS) -f ${DOCKERFILE} .
 	docker tag $(APPNAME):$(TAG) $(APPNAME):dev
 
 
@@ -51,4 +52,4 @@ clean_app:
 	-rm -rf $(APPNAME) vendor Gopkg.lock
 
 clean_docker:
-	-docker rmi $(APPNAME)
+	-docker rmi `docker images -q $(APPNAME)`

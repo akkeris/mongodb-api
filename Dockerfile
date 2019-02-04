@@ -43,7 +43,7 @@ RUN go build -o ${APPNAME}
 FROM alpine:3.7
 
 RUN apk update; \
-    apk add git openssl ca-certificates
+    apk add openssl ca-certificates
 
 ENV APPNAME mongodb-api
 
