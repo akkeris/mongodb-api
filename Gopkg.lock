@@ -3,11 +3,11 @@
 
 [[projects]]
   branch = "master"
-  digest = "1:844cde0419d116fa3c843f5bf7f3fc9e551238fc7f802e0575bc5fc8aca4a5cc"
+  digest = "1:7921c11e4aa983e7b5bcba7d3eacda64eea277b9514dedbe55cd428ac4c86e83"
   name = "github.com/akkeris/vault-client"
   packages = ["."]
   pruneopts = "UT"
-  revision = "3fb70cde1f28e398d5b97fb4774131b1f15fd236"
+  revision = "6788ec8d19257929fbc71552b5e015a6a9d515ec"
 
 [[projects]]
   digest = "1:baab02a9f8f46ac64bed54bc4bfffc6654080cbb183614eb3278a6170d6060fd"
@@ -26,15 +26,15 @@
   name = "github.com/gopherjs/gopherjs"
   packages = ["js"]
   pruneopts = "UT"
-  revision = "0892b62f0d9fb5857760c3cfca837207185117ee"
+  revision = "d547d1d9531ed93dbdebcbff7f83e7c876a1e0ee"
 
 [[projects]]
-  digest = "1:1e15f4e455f94aeaedfcf9c75b3e1c449b5acba1551c58446b4b45be507c707b"
+  digest = "1:4b63210654b1f2b664f74ec434a1bb1cb442b3d75742cc064a10808d1cca6361"
   name = "github.com/jtolds/gls"
   packages = ["."]
   pruneopts = "UT"
-  revision = "77f18212c9c7edc9bd6a33d383a7b545ce62f064"
-  version = "v4.2.1"
+  revision = "b4936e06046bbecbb94cae9c18127ebe510a2cb9"
+  version = "v4.20"
 
 [[projects]]
   branch = "master"
