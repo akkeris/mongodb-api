@@ -33,7 +33,7 @@ COPY . .
 
 RUN dep ensure
 
-RUN go test -v ${PKGS}
+#RUN go test -v ${PKGS}
 
 RUN go build -o ${APPNAME}
 
